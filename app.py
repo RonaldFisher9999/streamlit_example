@@ -15,7 +15,7 @@ import pandas as pd
 import numpy as np
 
 
-st.write("스페이스 타이타닉")
+st.write("스페이스 타이타닉!!!")
 
 
 import joblib
