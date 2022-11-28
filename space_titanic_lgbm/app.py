@@ -14,17 +14,12 @@ get_image("titanic.png") # https://www.canva.com/
 import pandas as pd
 import numpy as np
 
-data_url = "https://raw.githubusercontent.com/bigdata-young/bigdata_16th/main/data/titanic_train.csv"
-df = pd.read_csv(data_url) # URL로 CSV 불러오기
 
-st.write("타이타닉 탑승자 데이터")
-st.write(df.head(10)) # 자동으로 표 그려줌
-# st.table(df) # 이걸로 그려도 됨
-st.write("데이터 출처")
-st.write("https://www.kaggle.com/competitions/titanic/data")
+st.write("스페이스 타이타닉")
+
 
 import joblib
-model_path = f"{os.path.dirname(os.path.abspath(__file__))}/titanic_model_lr.pkl"
+model_path = f"{os.path.dirname(os.path.abspath(__file__))}/space_titanic_lgbm.pkl"
 model = joblib.load(model_path)
 
 st.write("---")
